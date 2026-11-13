@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F4F8"/>
+      <stop offset="100%" stop-color="#EDF7F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="20" fill="url(#mapBg)"/>
+
+  <!-- Grid road networks -->
+  <!-- Park green areas -->
+  <rect x="40" y="40" width="180" height="120" rx="14" fill="#CDEEC6" opacity="0.8"/>
+  <rect x="380" y="220" width="180" height="120" rx="14" fill="#CDEEC6" opacity="0.8"/>
+  
+  <!-- Roads -->
+  <!-- Main Avenue -->
+  <path d="M0 200h600" stroke="#FFFFFF" stroke-width="40"/>
+  <path d="M0 200h600" stroke="#F1F5F9" stroke-width="32"/>
+  <line x1="0" y1="200" x2="600" y2="200" stroke="#FFC857" stroke-width="3" stroke-dasharray="14 14"/>
+
+  <!-- Cross street -->
+  <path d="M300 0v380" stroke="#FFFFFF" stroke-width="36"/>
+  <path d="M300 0v380" stroke="#F1F5F9" stroke-width="28"/>
+  <line x1="300" y1="0" x2="300" y2="380" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="10 10"/>
+
+  <!-- Diagonal road -->
+  <path d="M60 380L540 40" stroke="#FFFFFF" stroke-width="22" opacity="0.7"/>
+
+  <!-- Trees dotted around -->
+  <circle cx="80" cy="80" r="14" fill="#78C850"/>
+  <circle cx="120" cy="65" r="10" fill="#60B03C"/>
+  <circle cx="170" cy="110" r="16" fill="#78C850"/>
+  <circle cx="420" cy="260" r="16" fill="#78C850"/>
+  <circle cx="480" cy="290" r="18" fill="#60B03C"/>
+
+  <!-- School Campus Lot in Center -->
+  <rect x="230" y="110" width="140" height="70" rx="12" fill="#2457A6" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="300" y="140" fill="#FFFFFF" font-size="12" font-family="'Nunito', sans-serif" font-weight="900" text-anchor="middle">PRIMARY SCHOOL</text>
+  <text x="300" y="156" fill="#FFC857" font-size="9" font-family="'Poppins', sans-serif" font-weight="600" text-anchor="middle">DEMO CAMPUS</text>
+
+  <!-- Big Red Location Pin -->
+  <g transform="translate(300, 100)">
+    <path d="M0 0c-15-20-15-35 0-45 15-10 30 5 15 45z" fill="#FF8066" filter="drop-shadow(0 6px 6px rgba(0,0,0,0.2))"/>
+    <circle cx="7" cy="-28" r="6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Street Names Labels -->
+  <rect x="15" y="180" width="130" height="22" rx="4" fill="#263247" opacity="0.85"/>
+  <text x="80" y="195" fill="#FFFFFF" font-size="10" font-family="'Poppins', sans-serif" font-weight="600" text-anchor="middle">Learning Avenue</text>
+
+  <rect x="235" y="15" width="130" height="22" rx="4" fill="#263247" opacity="0.85"/>
+  <text x="300" y="30" fill="#FFFFFF" font-size="10" font-family="'Poppins', sans-serif" font-weight="600" text-anchor="middle">Demo Nagar Main Rd</text>
+
+  <!-- Compass Rose -->
+  <g transform="translate(540, 60)">
+    <circle cx="0" cy="0" r="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <polygon points="0,-16 5,0 0,2 -5,0" fill="#FF8066"/>
+    <polygon points="0,16 5,0 0,-2 -5,0" fill="#94A3B8"/>
+    <text x="0" y="-18" fill="#263247" font-size="9" font-family="'Nunito', sans-serif" font-weight="900" text-anchor="middle">N</text>
+  </g>
+
+  <!-- Demo Map disclaimer -->
+  <rect x="15" y="340" width="280" height="26" rx="6" fill="#FFFFFF" opacity="0.95" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="25" y="357" fill="#263247" font-size="10" font-family="'Poppins', sans-serif" font-weight="500">📍 Fictional Location Illustration (Demo)</text>
+</svg>

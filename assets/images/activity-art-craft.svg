@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad_art" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF2FA"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <pattern id="grid_art" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.5" fill="#2457A6" opacity="0.08"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="640" height="360" rx="16" fill="url(#bgGrad_art)"/>
+  <rect width="640" height="360" rx="16" fill="url(#grid_art)"/>
+
+  <!-- Decorative geometric accents -->
+  <circle cx="80" cy="60" r="40" fill="#FFC857" opacity="0.3"/>
+  <circle cx="580" cy="300" r="50" fill="#FF8066" opacity="0.2"/>
+  <circle cx="560" cy="60" r="30" fill="#4D96FF" opacity="0.25"/>
+
+  <!-- Main Illustration Group -->
+  <g transform="translate(0, 15)">
+    
+      <!-- Palette & Brushes -->
+      <path d="M220 180c-40-10-70-40-60-80 10-35 55-45 95-25 35 18 65 55 45 90-10 18-30 25-45 15-10-8-15-2-20 0-6 3-10 0-15 0z" fill="#FFC857" stroke="#263247" stroke-width="3"/>
+      <!-- Paint dots -->
+      <circle cx="195" cy="130" r="12" fill="#FF8066"/>
+      <circle cx="230" cy="105" r="12" fill="#2457A6"/>
+      <circle cx="265" cy="120" r="12" fill="#5CD85A"/>
+      <circle cx="270" cy="155" r="12" fill="#4D96FF"/>
+      <!-- Paint brush -->
+      <line x1="330" y1="210" x2="430" y2="80" stroke="#263247" stroke-width="8" stroke-linecap="round"/>
+      <path d="M425 85l15-20c5-5 12 2 8 8l-15 20z" fill="#FF8066"/>
+      <!-- Canvas easel -->
+      <polygon points="360,90 420,90 400,160 380,160" fill="#EBF2FA" stroke="#2457A6" stroke-width="3"/>
+    
+  </g>
+
+  <!-- Title & Subtitle Banner at bottom -->
+  <rect x="24" y="275" width="592" height="65" rx="12" fill="#263247" opacity="0.94"/>
+  <text x="44" y="305" fill="#FFFFFF" font-size="19" font-family="'Nunito', sans-serif" font-weight="800" letter-spacing="0.5">Art & Craft</text>
+  <text x="44" y="325" fill="#FFC857" font-size="13" font-family="'Poppins', sans-serif" font-weight="500">Expressing Imagination Through Colors & Textures</text>
+
+  <!-- Demo Badge -->
+  <g transform="translate(500, 287)">
+    <rect width="100" height="24" rx="12" fill="#FF8066"/>
+    <text x="50" y="16" fill="#FFFFFF" font-size="10" font-family="'Poppins', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="0.8">ACTIVITY DEMO</text>
+  </g>
+</svg>

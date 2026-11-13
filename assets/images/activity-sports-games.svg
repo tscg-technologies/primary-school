@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad_sports" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF2FA"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <pattern id="grid_sports" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.5" fill="#2457A6" opacity="0.08"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="640" height="360" rx="16" fill="url(#bgGrad_sports)"/>
+  <rect width="640" height="360" rx="16" fill="url(#grid_sports)"/>
+
+  <!-- Decorative geometric accents -->
+  <circle cx="80" cy="60" r="40" fill="#FFC857" opacity="0.3"/>
+  <circle cx="580" cy="300" r="50" fill="#FF8066" opacity="0.2"/>
+  <circle cx="560" cy="60" r="30" fill="#4D96FF" opacity="0.25"/>
+
+  <!-- Main Illustration Group -->
+  <g transform="translate(0, 15)">
+    
+      <!-- Football, basketball, running track -->
+      <circle cx="220" cy="150" r="50" fill="#FFFFFF" stroke="#263247" stroke-width="4"/>
+      <polygon points="220,130 235,145 229,165 211,165 205,145" fill="#263247"/>
+      <!-- Basketball -->
+      <circle cx="340" cy="140" r="42" fill="#FF8066" stroke="#263247" stroke-width="4"/>
+      <path d="M298 140h84M340 98v84" stroke="#263247" stroke-width="3"/>
+      <!-- Winner Trophy -->
+      <path d="M420 110h50v40c0 15-12 25-25 25s-25-10-25-25v-40z" fill="#FFC857" stroke="#263247" stroke-width="3"/>
+      <path d="M410 120c-10 0-10 15 0 20v-5c-5 0-5-10 0-15z" fill="#FFC857"/>
+      <path d="M480 120c10 0 10 15 0 20v-5c5 0 5-10 0-15z" fill="#FFC857"/>
+      <rect x="435" y="175" width="20" height="20" fill="#2457A6"/>
+      <rect x="420" y="195" width="50" height="15" rx="3" fill="#263247"/>
+    
+  </g>
+
+  <!-- Title & Subtitle Banner at bottom -->
+  <rect x="24" y="275" width="592" height="65" rx="12" fill="#263247" opacity="0.94"/>
+  <text x="44" y="305" fill="#FFFFFF" font-size="19" font-family="'Nunito', sans-serif" font-weight="800" letter-spacing="0.5">Sports & Games</text>
+  <text x="44" y="325" fill="#FFC857" font-size="13" font-family="'Poppins', sans-serif" font-weight="500">Athletics, Teamwork, Agility & Good Sportsmanship</text>
+
+  <!-- Demo Badge -->
+  <g transform="translate(500, 287)">
+    <rect width="100" height="24" rx="12" fill="#FF8066"/>
+    <text x="50" y="16" fill="#FFFFFF" font-size="10" font-family="'Poppins', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="0.8">ACTIVITY DEMO</text>
+  </g>
+</svg>

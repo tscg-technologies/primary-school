@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primary School Website</title>
+
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description"
+    content="Primary School Website — Nurturing curiosity, creativity, and foundational excellence for young learners in a safe, joyful environment. Demonstration Project.">
+  <meta name="keywords"
+    content="Primary School Website, Indian Primary School, Pre-Primary, Kindergarten, Primary Education, Holistic Development, Safe Learning">
+  <meta name="author" content="Demonstration Project">
+  <meta property="og:title" content="Primary School Website — Little Steps Today, Brighter Futures Tomorrow">
+  <meta property="og:description"
+    content="A joyful learning environment where curiosity grows, creativity flourishes, and every child shines. Fictional demonstration website.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-school-banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Primary School Website">
+  <meta name="twitter:description" content="Premier demonstration website for a modern Indian primary school.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+
+  <!-- Google Fonts: Nunito (Headings) & Poppins (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons (Free CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar" role="complementary" aria-label="Demo notice & quick contacts">
+    <div class="container top-bar__container">
+      <div class="top-bar__left">
+        <span class="badge badge--pill badge--accent">
+          <i class="fa-solid fa-flask" aria-hidden="true"></i> Demonstration Website
+        </span>
+        <span class="top-bar__text">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Demo Nagar, Hyderabad
+        </span>
+      </div>
+      <div class="top-bar__right">
+        <a href="tel:+919999900000" class="top-bar__link" title="Call fictional demo number">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i> +91 99999 00000
+        </a>
+        <a href="mailto:hello@primaryschool-demo.example" class="top-bar__link" title="Email fictional demo contact">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> hello@primaryschool-demo.example
+        </a>
+        <span class="top-bar__hours">
+          <i class="fa-regular fa-clock" aria-hidden="true"></i> Mon–Sat: 9:00 AM – 4:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="site-header">
+    <div class="container header__container">
+      <!-- School Logo & Brand -->
+      <a href="#home" class="brand" aria-label="Primary School Website Home">
+        <div class="brand__logo">
+          <img src="assets/logo/school-logo.svg" alt="Primary School Logo" width="48" height="48">
+        </div>
+        <div class="brand__text">
+          <span class="brand__title">Primary School Website</span>
+          <span class="brand__tagline">Nurturing Young Minds • Joyful Learning</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+          <li class="nav__item"><a href="#academics" class="nav__link">Academics</a></li>
+          <li class="nav__item"><a href="#facilities" class="nav__link">Facilities</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action CTA -->
+      <div class="header__cta">
+        <a href="#admission" class="btn btn--primary btn--header">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          <span>Admission Enquiry</span>
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer"
+          aria-label="Toggle navigation menu">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer__overlay" id="drawer-overlay"></div>
+    <div class="mobile-drawer__content">
+      <div class="mobile-drawer__header">
+        <div class="brand brand--mobile">
+          <img src="assets/logo/school-logo.svg" alt="School Logo" width="40" height="40">
+          <div class="brand__text">
+            <span class="brand__title">Primary School</span>
+            <span class="brand__tagline">Demonstration Project</span>
+          </div>
+        </div>
+        <button class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav__list">
+          <li><a href="#home" class="mobile-nav__link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about" class="mobile-nav__link"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+          <li><a href="#academics" class="mobile-nav__link"><i class="fa-solid fa-book-open"></i> Academics</a></li>
+          <li><a href="#why-choose" class="mobile-nav__link"><i class="fa-solid fa-star"></i> Why Choose Us</a></li>
+          <li><a href="#facilities" class="mobile-nav__link"><i class="fa-solid fa-building-columns"></i> Facilities</a>
+          </li>
+          <li><a href="#gallery" class="mobile-nav__link"><i class="fa-solid fa-images"></i> Gallery</a></li>
+          <li><a href="#testimonials" class="mobile-nav__link"><i class="fa-solid fa-comment-dots"></i> Testimonials</a>
+          </li>
+          <li><a href="#contact" class="mobile-nav__link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-drawer__footer">
+        <a href="#admission" class="btn btn--primary btn--full drawer-admission-btn">
+          <i class="fa-solid fa-pencil"></i> Enquire for Admission
+        </a>
+        <div class="mobile-drawer__contact">
+          <p><i class="fa-solid fa-phone"></i> +91 99999 00000</p>
+          <p><i class="fa-solid fa-envelope"></i> hello@primaryschool-demo.example</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <!-- Background decorative wave & confetti elements -->
+      <div class="hero__bg-decor" aria-hidden="true">
+        <span class="decor-bubble decor-bubble--1"></span>
+        <span class="decor-bubble decor-bubble--2"></span>
+        <span class="decor-bubble decor-bubble--3"></span>
+      </div>
+
+      <div class="container hero__container">
+        <!-- Hero Text Column -->
+        <div class="hero__content" data-reveal="left">
+          <div class="hero__badge">
+            <span class="badge-icon"><i class="fa-solid fa-sparkles"></i></span>
+            <span>Welcome to Joyful Learning • Admissions Open 2026–27</span>
+          </div>
+
+          <h1 class="hero__headline">
+            Little Steps Today, <span class="highlight-text">Brighter Futures</span> Tomorrow.
+          </h1>
+
+          <p class="hero__subtext">
+            Discover a joyful learning environment where curiosity grows, creativity flourishes and every child gets the
+            opportunity to shine.
+          </p>
+
+          <div class="hero__cta-group">
+            <a href="#academics" class="btn btn--primary btn--lg">
+              <span>Explore Our School</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#admission" class="btn btn--outline btn--lg">
+              <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+              <span>Enquire for Admission</span>
+            </a>
+          </div>
+
+          <!-- Highlight Feature Pills -->
+          <div class="hero__pills">
+            <div class="pill-item">
+              <i class="fa-solid fa-shield-heart text-coral"></i>
+              <span>Safe &amp; Nurturing</span>
+            </div>
+            <div class="pill-item">
+              <i class="fa-solid fa-shapes text-yellow"></i>
+              <span>Play-Based Learning</span>
+            </div>
+            <div class="pill-item">
+              <i class="fa-solid fa-certificate text-blue"></i>
+              <span>Certified Educators</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Graphic Showcase & Floating Cards -->
+        <div class="hero__visual" data-reveal="right">
+          <div class="hero__image-wrapper">
+            <img src="assets/images/hero-school-banner.jpg"
+              alt="Primary school children smiling together on campus in a joyful learning environment"
+              class="hero__img" width="1376" height="768" fetchpriority="high">
+
+            <!-- Floating Highlight Card 1 -->
+            <div class="floating-card floating-card--1" data-float="play">
+              <div class="floating-card__icon floating-card__icon--yellow">
+                <i class="fa-solid fa-puzzle-piece"></i>
+              </div>
+              <div class="floating-card__info">
+                <strong>Learning Through Play</strong>
+                <span>Hands-on STEAM &amp; Discovery</span>
+              </div>
+            </div>
+
+            <!-- Floating Highlight Card 2 -->
+            <div class="floating-card floating-card--2" data-float="care">
+              <div class="floating-card__icon floating-card__icon--coral">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="floating-card__info">
+                <strong>Caring Environment</strong>
+                <span>Warm, safe &amp; inclusive care</span>
+              </div>
+            </div>
+
+            <!-- Floating Highlight Card 3 -->
+            <div class="floating-card floating-card--3" data-float="grow">
+              <div class="floating-card__icon floating-card__icon--blue">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <div class="floating-card__info">
+                <strong>Growing Together</strong>
+                <span>Confidence &amp; social skills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Bottom Transition -->
+      <div class="wave-divider wave-divider--bottom" aria-hidden="true">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,60 L1200,120 L0,120 Z" fill="#FFFFFF"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- SECTION: ABOUT OUR SCHOOL -->
+    <section class="section section--about" id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Image Column with decorative badges -->
+          <div class="about__media" data-reveal="left">
+            <div class="about__image-frame">
+              <img src="assets/images/about-school.jpg"
+                alt="Modern primary school campus building with welcoming environment and happy learners"
+                class="about__img" width="1200" height="896" loading="lazy">
+              <div class="experience-badge">
+                <span class="experience-badge__number">10+</span>
+                <span class="experience-badge__label">Years of Fictional Educational Excellence</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Column -->
+          <div class="about__content" data-reveal="right">
+            <div class="section-tag">
+              <i class="fa-solid fa-compass"></i> About Our Institution
+            </div>
+            <h2 class="section-title">
+              Where Every Child's Journey Begins.
+            </h2>
+            <p class="about__lead">
+              At <strong>Primary School Website</strong>, we believe early childhood and primary education are not just
+              the start of schooling—they are the foundational launchpad for lifelong curiosity, empathy, and creative
+              problem-solving.
+            </p>
+            <p class="about__text">
+              Our campus blends modern teaching pedagogies with warm Indian cultural values, offering a supportive
+              ecosystem where children transition seamlessly from toddler curiosity to confident scholastic thinkers.
+              Every classroom is thoughtfully crafted to make learning an interactive adventure rather than a chore.
+            </p>
+
+            <!-- Philosophy / Mission / Vision Tabs -->
+            <div class="about-tabs" id="about-tabs">
+              <div class="about-tabs__nav" role="tablist" aria-label="About Us Philosophy Tabs">
+                <button class="about-tab-btn active" role="tab" aria-selected="true" aria-controls="tab-philosophy"
+                  id="btn-philosophy">
+                  <i class="fa-solid fa-lightbulb"></i> Philosophy
+                </button>
+                <button class="about-tab-btn" role="tab" aria-selected="false" aria-controls="tab-mission"
+                  id="btn-mission">
+                  <i class="fa-solid fa-bullseye"></i> Our Mission
+                </button>
+                <button class="about-tab-btn" role="tab" aria-selected="false" aria-controls="tab-vision"
+                  id="btn-vision">
+                  <i class="fa-solid fa-eye"></i> Our Vision
+                </button>
+              </div>
+
+              <div class="about-tabs__panels">
+                <!-- Panel 1: Philosophy -->
+                <div class="about-tab-panel active" id="tab-philosophy" role="tabpanel"
+                  aria-labelledby="btn-philosophy">
+                  <h4>Joyful, Child-Centric Learning</h4>
+                  <p>Every child develops at their unique pace. We cultivate multiple intelligences through inquiry,
+                    tactile projects, storytelling, and cooperative group play, fostering both emotional intelligence
+                    and academic confidence.</p>
+                </div>
+
+                <!-- Panel 2: Mission -->
+                <div class="about-tab-panel" id="tab-mission" role="tabpanel" aria-labelledby="btn-mission" hidden>
+                  <h4>Empowering Every Young Learner</h4>
+                  <p>To provide a physically safe, intellectually vibrant, and values-rich sanctuary where foundational
+                    literacy, numeracy, creative expression, and mutual respect empower children to become joyful
+                    lifelong learners.</p>
+                </div>
+
+                <!-- Panel 3: Vision -->
+                <div class="about-tab-panel" id="tab-vision" role="tabpanel" aria-labelledby="btn-vision" hidden>
+                  <h4>Inspiring Tomorrow's Compassionate Thinkers</h4>
+                  <p>To be a premier model of primary education that harmonizes international best teaching practices
+                    with strong ethical roots, nurturing thoughtful, confident, and responsible global citizens.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Highlight Statistics (Fictional Demo Content) -->
+            <div class="stats-strip" aria-label="School demonstration statistics">
+              <div class="stat-card">
+                <div class="stat-card__number" data-target="500">500+</div>
+                <div class="stat-card__label">Happy Learners</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__number" data-target="25">25+</div>
+                <div class="stat-card__label">Dedicated Educators</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__number" data-target="15">15+</div>
+                <div class="stat-card__label">Learning Activities</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__number" data-target="10">10+</div>
+                <div class="stat-card__label">Years of Excellence</div>
+              </div>
+            </div>
+            <p class="demo-caption">*All statistics and figures shown are illustrative demo metrics for website
+              presentation purposes.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ACADEMICS & LEARNING PROGRAMS -->
+    <section class="section section--academics bg-light" id="academics">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="up">
+          <div class="section-tag section-tag--center">
+            <i class="fa-solid fa-graduation-cap"></i> Academic Pathways
+          </div>
+          <h2 class="section-title">Academics &amp; Learning Programs</h2>
+          <p class="section-subtitle">
+            A carefully structured, age-appropriate curriculum designed to ignite curiosity, develop key foundational
+            skills, and build a lasting love for learning.
+          </p>
+        </div>
+
+        <div class="programs-grid">
+
+          <!-- Program Card 1: Pre-Primary -->
+          <article class="program-card" data-reveal="up" data-delay="100">
+            <div class="program-card__thumb">
+              <img src="assets/images/academics-pre-primary.jpg"
+                alt="Pre-Primary nursery and toddler sensory playgroup learning" loading="lazy">
+              <span class="program-card__age">Ages 2.5 – 3.5 Yrs</span>
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__badge badge--coral">Playgroup &amp; Nursery</div>
+              <h3 class="program-card__title">Pre-Primary</h3>
+              <p class="program-card__desc">
+                Gentle transition from home to school. Focus on sensory exploration, motor skills, social bonding, and
+                playful language immersion through rhymes and stories.
+              </p>
+              <ul class="program-card__highlights">
+                <li><i class="fa-solid fa-circle-check"></i> Sensory &amp; Motor Development</li>
+                <li><i class="fa-solid fa-circle-check"></i> Circle Time &amp; Expressive Play</li>
+                <li><i class="fa-solid fa-circle-check"></i> 1:8 Adult-Child Ratio</li>
+              </ul>
+              <button class="btn btn--outline-primary btn--sm program-modal-btn" data-program="pre-primary">
+                <span>Explore Curriculum</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Program Card 2: Kindergarten -->
+          <article class="program-card" data-reveal="up" data-delay="200">
+            <div class="program-card__thumb">
+              <img src="assets/images/academics-kindergarten.jpg"
+                alt="Kindergarten foundational numeracy, reading and collaborative classroom activities" loading="lazy">
+              <span class="program-card__age">Ages 3.5 – 5.5 Yrs</span>
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__badge badge--yellow">LKG &amp; UKG</div>
+              <h3 class="program-card__title">Kindergarten</h3>
+              <p class="program-card__desc">
+                Structured phonics, foundational numeracy, environmental awareness, and collaborative creativity.
+                Prepares children for primary academic environments.
+              </p>
+              <ul class="program-card__highlights">
+                <li><i class="fa-solid fa-circle-check"></i> Phonics &amp; Early Reading</li>
+                <li><i class="fa-solid fa-circle-check"></i> Number Sense &amp; Patterns</li>
+                <li><i class="fa-solid fa-circle-check"></i> Creative Arts &amp; Expression</li>
+              </ul>
+              <button class="btn btn--outline-primary btn--sm program-modal-btn" data-program="kindergarten">
+                <span>Explore Curriculum</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Program Card 3: Primary Education -->
+          <article class="program-card" data-reveal="up" data-delay="300">
+            <div class="program-card__thumb">
+              <img src="assets/images/academics-learning.jpg"
+                alt="Primary education students engaged in interactive foundational classroom learning" loading="lazy">
+              <span class="program-card__age">Classes 1 – 5 (Ages 6–11)</span>
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__badge badge--blue">Core Primary</div>
+              <h3 class="program-card__title">Primary Education</h3>
+              <p class="program-card__desc">
+                Rigorous yet joyful subject mastery across English, Mathematics, Science, Social Studies, Hindi/Regional
+                Language, and Digital Literacy.
+              </p>
+              <ul class="program-card__highlights">
+                <li><i class="fa-solid fa-circle-check"></i> Inquiry-Based Concept Mastery</li>
+                <li><i class="fa-solid fa-circle-check"></i> Critical Thinking &amp; Reasoning</li>
+                <li><i class="fa-solid fa-circle-check"></i> Public Speaking &amp; Projects</li>
+              </ul>
+              <button class="btn btn--outline-primary btn--sm program-modal-btn" data-program="primary">
+                <span>Explore Curriculum</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Program Card 4: Activity-Based Learning -->
+          <article class="program-card" data-reveal="up" data-delay="400">
+            <div class="program-card__thumb">
+              <img src="assets/images/academics-activity-steam.jpg"
+                alt="Students engaged in STEAM experiments, robotics, coding and hands-on discovery" loading="lazy">
+              <span class="program-card__age">All Grade Levels</span>
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__badge badge--mint">STEAM &amp; Experiential</div>
+              <h3 class="program-card__title">Activity-Based Learning</h3>
+              <p class="program-card__desc">
+                Hands-on science experiments, basic robotics, gardening, coding fundamentals, and experiential modules
+                that transform textbook theory into real discovery.
+              </p>
+              <ul class="program-card__highlights">
+                <li><i class="fa-solid fa-circle-check"></i> Science &amp; Discovery Labs</li>
+                <li><i class="fa-solid fa-circle-check"></i> Coding &amp; Logic Puzzles</li>
+                <li><i class="fa-solid fa-circle-check"></i> Nature &amp; Eco Club Projects</li>
+              </ul>
+              <button class="btn btn--outline-primary btn--sm program-modal-btn" data-program="activity-based">
+                <span>Explore Curriculum</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: WHY CHOOSE OUR SCHOOL -->
+    <section class="section section--why" id="why-choose">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="up">
+          <div class="section-tag section-tag--center">
+            <i class="fa-solid fa-award"></i> The Primary Advantage
+          </div>
+          <h2 class="section-title">More Than Education, A Foundation for Life.</h2>
+          <p class="section-subtitle">
+            We provide an environment where children don't just memorize answers, but learn how to ask meaningful
+            questions with curiosity and courage.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <!-- Feature Card 1 -->
+          <div class="feature-card" data-reveal="up" data-delay="100">
+            <div class="feature-card__icon feature-card__icon--blue">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <h3 class="feature-card__title">Experienced Educators</h3>
+            <p class="feature-card__text">
+              Passionate, background-verified teachers specially certified in early childhood psychology, differentiated
+              instruction, and positive reinforcement.
+            </p>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div class="feature-card" data-reveal="up" data-delay="150">
+            <div class="feature-card__icon feature-card__icon--yellow">
+              <i class="fa-solid fa-face-smile"></i>
+            </div>
+            <h3 class="feature-card__title">Child-Friendly Learning</h3>
+            <p class="feature-card__text">
+              Vibrant classrooms with rounded child-safe furniture, abundant natural sunlight, sensory zones, and
+              playful visual learning tools.
+            </p>
+          </div>
+
+          <!-- Feature Card 3 -->
+          <div class="feature-card" data-reveal="up" data-delay="200">
+            <div class="feature-card__icon feature-card__icon--coral">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="feature-card__title">Safe Learning Environment</h3>
+            <p class="feature-card__text">
+              24/7 CCTV surveillance, secured campus perimeter, dedicated security guards, sanitized washrooms, and
+              strict visitor verification protocols.
+            </p>
+          </div>
+
+          <!-- Feature Card 4 -->
+          <div class="feature-card" data-reveal="up" data-delay="250">
+            <div class="feature-card__icon feature-card__icon--mint">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="feature-card__title">Creative Development</h3>
+            <p class="feature-card__text">
+              Dedicated art studios, performing arts spaces, creative storytelling stages, and musical discovery
+              workshops built into the weekly routine.
+            </p>
+          </div>
+
+          <!-- Feature Card 5 -->
+          <div class="feature-card" data-reveal="up" data-delay="300">
+            <div class="feature-card__icon feature-card__icon--purple">
+              <i class="fa-solid fa-hands-holding-child"></i>
+            </div>
+            <h3 class="feature-card__title">Individual Attention</h3>
+            <p class="feature-card__text">
+              Low student-to-teacher ratio (1:15 in primary, 1:8 in pre-primary) ensuring every learner is heard,
+              supported, and nurtured according to their strengths.
+            </p>
+          </div>
+
+          <!-- Feature Card 6 -->
+          <div class="feature-card" data-reveal="up" data-delay="350">
+            <div class="feature-card__icon feature-card__icon--sky">
+              <i class="fa-solid fa-earth-asia"></i>
+            </div>
+            <h3 class="feature-card__title">Holistic Education</h3>
+            <p class="feature-card__text">
+              Balanced integration of academic brilliance, physical fitness, ethical values, emotional resilience, and
+              environmental consciousness.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FACILITIES & INFRASTRUCTURE -->
+    <section class="section section--facilities bg-light" id="facilities">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="up">
+          <div class="section-tag section-tag--center">
+            <i class="fa-solid fa-school"></i> World-Class Infrastructure
+          </div>
+          <h2 class="section-title">Facilities &amp; Infrastructure</h2>
+          <p class="section-subtitle">
+            Every corner of our campus is designed with safety, wonder, and ergonomic comfort in mind, creating an
+            optimal setting for active young minds.
+          </p>
+        </div>
+
+        <div class="facilities-grid">
+
+          <!-- Facility 1: Smart Classrooms -->
+          <div class="facility-card facility-card--featured" data-reveal="up">
+            <div class="facility-card__img-wrap">
+              <img src="assets/images/facility-smart-class.jpg"
+                alt="Smart Classrooms equipped with interactive digital touchboards and collaborative workspaces" loading="lazy">
+              <span class="facility-badge">Digital Learning</span>
+            </div>
+            <div class="facility-card__content">
+              <h3 class="facility-card__title"><i class="fa-solid fa-tv"></i> Smart Classrooms</h3>
+              <p class="facility-card__text">
+                Equipped with interactive smart boards, audio-visual storytelling tools, and ergonomic, adjustable
+                seating for active group collaboration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Facility 2: Library & Reading Zone -->
+          <div class="facility-card" data-reveal="up" data-delay="100">
+            <div class="facility-card__img-wrap">
+              <img src="assets/images/school-library.jpg"
+                alt="Well-stocked modern primary school library and reading zone with picture books and cozy reading spaces" loading="lazy">
+              <span class="facility-badge">Imagination Hub</span>
+            </div>
+            <div class="facility-card__content">
+              <h3 class="facility-card__title"><i class="fa-solid fa-book"></i> Library &amp; Reading Zone</h3>
+              <p class="facility-card__text">
+                Stocked with over 3,000 illustrative picture books, early readers, bilingual folk tales, and plush
+                reading corners.
+              </p>
+            </div>
+          </div>
+
+          <!-- Facility 3: Computer Learning Lab -->
+          <div class="facility-card" data-reveal="up" data-delay="150">
+            <div class="facility-card__img-wrap">
+              <img src="assets/images/facility-computer-lab.jpg"
+                alt="Computer Learning Lab with child-friendly monitors, coding activities and teacher guidance" loading="lazy">
+              <span class="facility-badge">Digital Literacy</span>
+            </div>
+            <div class="facility-card__content">
+              <h3 class="facility-card__title"><i class="fa-solid fa-laptop-code"></i> Computer Learning Lab</h3>
+              <p class="facility-card__text">
+                Child-safe workstations with filtered internet, block-based coding (Scratch), and guided digital
+                citizenship modules.
+              </p>
+            </div>
+          </div>
+
+          <!-- Facility 4: Science Discovery Area -->
+          <div class="facility-card" data-reveal="up" data-delay="200">
+            <div class="facility-card__img-wrap">
+              <img src="assets/images/facility-science-discovery.jpg"
+                alt="Science Discovery Area with experimental tables, magnifying stations, plant life cycles, and balance scales" loading="lazy">
+              <span class="facility-badge">Hands-On STEM</span>
+            </div>
+            <div class="facility-card__content">
+              <h3 class="facility-card__title"><i class="fa-solid fa-flask-vial"></i> Science Discovery Area</h3>
+              <p class="facility-card__text">
+                Kid-safe experimental tables, magnifying stations, plant life cycles, and simple physics balance scales.
+              </p>
+            </div>
+          </div>
+
+          <!-- Facility 5: Indoor Activity Space -->
+          <div class="facility-card" data-reveal="up" data-delay="250">
+            <div class="facility-card__img-wrap">
+              <img src="assets/images/facility-indoor-play.jpg"
+                alt="Soft Indoor Activity Space with foam blocks and climbing equipment" loading="lazy">
+              <span class="facility-badge">All-Weather Play</span>
+            </div>
+            <div class="facility-card__content">
+              <h3 class="facility-card__title"><i class="fa-solid fa-cubes"></i> Indoor Activity Space</h3>
+              <p class="facility-card__text">
+                Rubber-matted soft play zone with oversized foam blocks, sensory balance beams, yoga mats, and creative
+                free-movement areas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Facility 6: Outdoor Playground -->
+          <div class="facility-card" data-reveal="up" data-delay="300">
+            <div class="facility-card__img-wrap">
+              <img src="assets/images/facility-playground.jpg"
+                alt="Outdoor Playground with safe synthetic turf, swings, and slide" loading="lazy">
+              <span class="facility-badge">Physical Vitality</span>
+            </div>
+            <div class="facility-card__content">
+              <h3 class="facility-card__title"><i class="fa-solid fa-volleyball"></i> Outdoor Playground</h3>
+              <p class="facility-card__text">
+                Safe impact-absorbent turf, certified play towers, running track, mini football pitch, and shaded sand
+                play pit.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SCHOOL GALLERY -->
+    <section class="section section--gallery bg-light" id="gallery">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="up">
+          <div class="section-tag section-tag--center">
+            <i class="fa-solid fa-camera"></i> Life on Campus
+          </div>
+          <h2 class="section-title">School Gallery</h2>
+          <p class="section-subtitle">
+            Glimpses into our vibrant daily moments, joyful learning milestones, spirited athletic meets, and creative
+            campus celebrations.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="gallery-filters" role="group" aria-label="Gallery category filters" data-reveal="up">
+          <button class="gallery-filter-btn active" data-filter="all">All</button>
+          <button class="gallery-filter-btn" data-filter="classrooms">Classrooms</button>
+          <button class="gallery-filter-btn" data-filter="activities">Activities</button>
+          <button class="gallery-filter-btn" data-filter="sports">Sports</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+
+          <!-- Item 1: Classrooms -->
+          <figure class="gallery-item" data-category="classrooms" data-reveal="zoom">
+            <div class="gallery-item__thumb">
+              <img src="assets/images/academics-learning.jpg"
+                alt="Classrooms: Collaborative classroom learning session" loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__category">Classrooms</span>
+                <h4 class="gallery-item__title">Interactive Learning Hour</h4>
+                <button class="gallery-zoom-btn" aria-label="View Interactive Learning Hour in Lightbox">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 2: Activities -->
+          <figure class="gallery-item" data-category="activities" data-reveal="zoom">
+            <div class="gallery-item__thumb">
+              <img src="assets/images/creative-learning.jpg" alt="Activities: Creative learning, arts, and hands-on discovery workshop"
+                loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__category">Activities</span>
+                <h4 class="gallery-item__title">Creative Learning Workshop</h4>
+                <button class="gallery-zoom-btn" aria-label="View Creative Learning Workshop in Lightbox">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 3: Sports -->
+          <figure class="gallery-item" data-category="sports" data-reveal="zoom">
+            <div class="gallery-item__thumb">
+              <img src="assets/images/school-activities.jpg" alt="Sports: Outdoor sports and physical agility activities"
+                loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__category">Sports</span>
+                <h4 class="gallery-item__title">Outdoor Sports &amp; Games</h4>
+                <button class="gallery-zoom-btn" aria-label="View Outdoor Sports in Lightbox">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 4: Classrooms -->
+          <figure class="gallery-item" data-category="classrooms" data-reveal="zoom">
+            <div class="gallery-item__thumb">
+              <img src="assets/images/school-library.jpg" alt="Classrooms: Little Readers Club reading circle"
+                loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__category">Classrooms</span>
+                <h4 class="gallery-item__title">Little Readers Club</h4>
+                <button class="gallery-zoom-btn" aria-label="View Readers Club in Lightbox">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+              </div>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL FOR GALLERY -->
+    <div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox" hidden>
+      <div class="lightbox__overlay" id="lightbox-overlay"></div>
+      <div class="lightbox__container">
+        <button class="lightbox__btn lightbox__btn--close" id="lightbox-close" aria-label="Close Lightbox (Esc)">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button class="lightbox__btn lightbox__btn--nav lightbox__btn--prev" id="lightbox-prev"
+          aria-label="Previous Image">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <figure class="lightbox__figure">
+          <img src="" alt="" id="lightbox-img" class="lightbox__image">
+          <figcaption class="lightbox__caption">
+            <span class="lightbox__tag" id="lightbox-tag">Category</span>
+            <h3 class="lightbox__title" id="lightbox-title">Image Title</h3>
+            <span class="lightbox__counter" id="lightbox-counter">1 of 8</span>
+          </figcaption>
+        </figure>
+
+        <button class="lightbox__btn lightbox__btn--nav lightbox__btn--next" id="lightbox-next" aria-label="Next Image">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- SECTION: TESTIMONIALS -->
+    <section class="section section--testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="up">
+          <div class="section-tag section-tag--center">
+            <i class="fa-solid fa-heart"></i> Parent Voices
+          </div>
+          <h2 class="section-title">What Parents Say About Us.</h2>
+          <p class="section-subtitle">
+            Read fictional feedback showcasing how our collaborative community and warm mentorship empower young minds
+            to flourish.
+          </p>
+        </div>
+
+        <!-- Testimonials Carousel Slider -->
+        <div class="testimonial-slider" id="testimonial-slider" data-reveal="up">
+          <div class="testimonial-slider__track" id="testimonial-track">
+
+            <!-- Testimonial 1 -->
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                “Enrolling Aarav in this school was the best decision we made. The individual care, the warm approach of
+                his teachers, and the emphasis on curiosity rather than rote learning have completely transformed his
+                confidence and love for reading!”
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="author-avatar author-avatar--blue">
+                  <span>PS</span>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Priya &amp; Rajesh Sharma</h4>
+                  <p class="author-role">Parents of Aarav Sharma (Grade 3)</p>
+                  <span class="author-note">Fictional Demo Testimonial</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                “As working parents, safety and hygiene were our top priorities. The campus cleanliness, attentive
+                staff, and loving kindergarten teachers gave us total peace of mind. Meera wakes up excited every
+                morning eager to go to school!”
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="author-avatar author-avatar--yellow">
+                  <span>AM</span>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Dr. Ananya Mukherjee</h4>
+                  <p class="author-role">Mother of Meera (Kindergarten UKG)</p>
+                  <span class="author-note">Fictional Demo Testimonial</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                “The activity-based learning approach is exceptional. Kabir’s motor skills, emotional expressiveness,
+                and vocabulary improved remarkably within his first term. The teachers truly treat every child like
+                family.”
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="author-avatar author-avatar--coral">
+                  <span>VV</span>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Vikram &amp; Sunita Verma</h4>
+                  <p class="author-role">Parents of Kabir (Pre-Primary Nursery)</p>
+                  <span class="author-note">Fictional Demo Testimonial</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonial 4 (Bonus for smooth cycling) -->
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                “The balance between academics, art, and moral education is outstanding. We especially appreciate how
+                children are encouraged to speak on stage and express themselves without fear. A truly holistic
+                institution!”
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="author-avatar author-avatar--mint">
+                  <span>SR</span>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Sneha Reddy</h4>
+                  <p class="author-role">Mother of Ananya (Grade 1)</p>
+                  <span class="author-note">Fictional Demo Testimonial</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Controls -->
+          <div class="testimonial-controls">
+            <button class="slider-arrow slider-arrow--prev" id="test-prev" aria-label="Previous Testimonial">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div class="testimonial-dots" id="test-dots" role="tablist" aria-label="Testimonial Navigation Dots">
+              <!-- Dots injected via JS -->
+            </div>
+            <button class="slider-arrow slider-arrow--next" id="test-next" aria-label="Next Testimonial">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <p class="demo-caption text-center mt-3">
+          *All parent names and reviews are completely fictional demo illustrations designed to demonstrate UI/UX
+          layout.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION: ADMISSION ENQUIRY SECTION -->
+    <section class="section section--admission" id="admission">
+      <div class="container">
+        <div class="admission-box">
+          <div class="admission-grid">
+
+            <!-- Left Info Panel -->
+            <div class="admission-info" data-reveal="left">
+              <div class="section-tag section-tag--light">
+                <i class="fa-solid fa-graduation-cap"></i> Admissions Open 2026–27
+              </div>
+              <h2 class="admission-info__headline">
+                Give Your Child a Bright Beginning.
+              </h2>
+              <p class="admission-info__text">
+                Take the first step towards a joyful and meaningful learning journey. Schedule a campus tour, speak with
+                our educators, and explore our welcoming community.
+              </p>
+
+              <div class="admission-steps">
+                <div class="step-item">
+                  <div class="step-item__number">1</div>
+                  <div class="step-item__content">
+                    <h5>Submit Demo Enquiry</h5>
+                    <p>Fill out the form with your contact and grade preferences.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-item__number">2</div>
+                  <div class="step-item__content">
+                    <h5>Campus Visit &amp; Tour</h5>
+                    <p>Experience our smart classrooms and playground in person.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-item__number">3</div>
+                  <div class="step-item__content">
+                    <h5>Child-Friendly Interaction</h5>
+                    <p>A fun, informal conversation to understand your child's interests.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="admission-help">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                  <strong>Need assistance?</strong>
+                  <p>Call our fictional admissions desk: +91 99999 00000</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Form Panel -->
+            <div class="admission-form-wrapper" data-reveal="right">
+              <div class="form-header">
+                <h3>Admission Enquiry Form</h3>
+                <p>Complete this demonstration form to experience client-side validation.</p>
+              </div>
+
+              <!-- Demo Notice Alert -->
+              <div class="alert alert--demo" role="note">
+                <i class="fa-solid fa-info-circle"></i>
+                <span><strong>Demo Mode:</strong> No data is submitted or stored on external servers. This interactive
+                  form verifies fields and displays realistic success feedback.</span>
+              </div>
+
+              <form id="admission-form" class="admission-form" novalidate>
+                <div class="form-row">
+                  <!-- Parent Name -->
+                  <div class="form-group">
+                    <label for="parent-name" class="form-label">Parent / Guardian Name <span
+                        class="required">*</span></label>
+                    <div class="input-with-icon">
+                      <i class="fa-solid fa-user"></i>
+                      <input type="text" id="parent-name" name="parentName" class="form-control"
+                        placeholder="e.g. Rajesh Sharma" required autocomplete="name">
+                    </div>
+                    <span class="field-error" id="err-parentName" aria-live="polite"></span>
+                  </div>
+
+                  <!-- Child Name -->
+                  <div class="form-group">
+                    <label for="child-name" class="form-label">Child Name <span class="required">*</span></label>
+                    <div class="input-with-icon">
+                      <i class="fa-solid fa-child"></i>
+                      <input type="text" id="child-name" name="childName" class="form-control"
+                        placeholder="e.g. Aarav Sharma" required>
+                    </div>
+                    <span class="field-error" id="err-childName" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <!-- Parent Email -->
+                  <div class="form-group">
+                    <label for="parent-email" class="form-label">Parent Email Address <span
+                        class="required">*</span></label>
+                    <div class="input-with-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                      <input type="email" id="parent-email" name="parentEmail" class="form-control"
+                        placeholder="e.g. parent@example.com" required autocomplete="email">
+                    </div>
+                    <span class="field-error" id="err-parentEmail" aria-live="polite"></span>
+                  </div>
+
+                  <!-- Phone Number (Indian) -->
+                  <div class="form-group">
+                    <label for="phone-number" class="form-label">Phone Number (10 Digits) <span
+                        class="required">*</span></label>
+                    <div class="input-with-icon">
+                      <i class="fa-solid fa-phone"></i>
+                      <input type="tel" id="phone-number" name="phoneNumber" class="form-control"
+                        placeholder="e.g. 9876543210" maxlength="10" required autocomplete="tel">
+                    </div>
+                    <span class="field-error" id="err-phoneNumber" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <!-- Applying For -->
+                <div class="form-group">
+                  <label for="applying-for" class="form-label">Applying For Grade / Level <span
+                      class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <select id="applying-for" name="applyingFor" class="form-control form-select" required>
+                      <option value="" disabled selected>-- Select Program --</option>
+                      <option value="Pre-Primary (Playgroup / Nursery)">Pre-Primary (Playgroup / Nursery: Age 2.5–3.5)
+                      </option>
+                      <option value="Kindergarten (LKG)">Kindergarten (LKG: Age 3.5–4.5)</option>
+                      <option value="Kindergarten (UKG)">Kindergarten (UKG: Age 4.5–5.5)</option>
+                      <option value="Primary Grade 1">Primary Grade 1 (Age 6+)</option>
+                      <option value="Primary Grade 2">Primary Grade 2</option>
+                      <option value="Primary Grade 3">Primary Grade 3</option>
+                      <option value="Primary Grade 4">Primary Grade 4</option>
+                      <option value="Primary Grade 5">Primary Grade 5</option>
+                    </select>
+                  </div>
+                  <span class="field-error" id="err-applyingFor" aria-live="polite"></span>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Questions or Message (Optional)</label>
+                  <textarea id="form-message" name="message" class="form-control form-textarea" rows="3"
+                    placeholder="Share any specific learning preferences, medical considerations, or questions..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn--primary btn--full btn--submit" id="btn-submit-admission">
+                  <span class="btn-text">Submit Admission Enquiry</span>
+                  <span class="btn-loader" hidden><i class="fa-solid fa-circle-notch fa-spin"></i> Validating...</span>
+                  <i class="fa-solid fa-arrow-right btn-icon"></i>
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT SECTION -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="up">
+          <div class="section-tag section-tag--center">
+            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+          </div>
+          <h2 class="section-title">We Are Here to Help.</h2>
+          <p class="section-subtitle">
+            Have questions about admissions, our curriculum, or campus safety? Reach out to our fictional demo front
+            desk.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left Info Cards -->
+          <div class="contact-cards" data-reveal="left">
+
+            <!-- Card 1: Address -->
+            <div class="contact-card">
+              <div class="contact-card__icon contact-card__icon--blue">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-card__details">
+                <h4>Campus Address</h4>
+                <p>Plot No. 00, Learning Avenue, Demo Nagar, Hyderabad, Telangana – 500000.</p>
+                <span class="demo-subtext">Fictional demonstration address</span>
+              </div>
+            </div>
+
+            <!-- Card 2: Phone -->
+            <div class="contact-card">
+              <div class="contact-card__icon contact-card__icon--yellow">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-card__details">
+                <h4>Telephone &amp; Front Desk</h4>
+                <p><a href="tel:+919999900000" class="contact-link">+91 99999 00000</a></p>
+                <p class="contact-alt-phone">+91 99999 00001 (Admissions Demo)</p>
+              </div>
+            </div>
+
+            <!-- Card 3: Email -->
+            <div class="contact-card">
+              <div class="contact-card__icon contact-card__icon--coral">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card__details">
+                <h4>Email Inquiries</h4>
+                <p><a href="mailto:hello@primaryschool-demo.example"
+                    class="contact-link">hello@primaryschool-demo.example</a></p>
+                <p><a href="mailto:admissions@primaryschool-demo.example"
+                    class="contact-link">admissions@primaryschool-demo.example</a></p>
+              </div>
+            </div>
+
+            <!-- Card 4: Hours -->
+            <div class="contact-card">
+              <div class="contact-card__icon contact-card__icon--mint">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="contact-card__details">
+                <h4>Campus Visiting Hours</h4>
+                <p>Monday – Saturday: 9:00 AM – 4:00 PM</p>
+                <span class="demo-subtext">Sunday &amp; Gazetted Holidays: Closed</span>
+              </div>
+            </div>
+
+            <!-- WhatsApp Demonstration CTA -->
+            <div class="whatsapp-demo-box">
+              <div class="whatsapp-demo-box__left">
+                <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+                <div>
+                  <strong>Quick Question via WhatsApp?</strong>
+                  <p>Instant support demo placeholder</p>
+                </div>
+              </div>
+              <button class="btn btn--whatsapp" id="btn-whatsapp-demo" type="button">
+                <span>Chat Demo</span>
+                <i class="fa-solid fa-comment"></i>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Right Decorative Campus Map -->
+          <div class="contact-map-wrapper" data-reveal="right">
+            <div class="map-card">
+              <div class="map-card__header">
+                <div class="map-card__title">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <span>Campus Location Illustration</span>
+                </div>
+                <span class="badge badge--pill badge--accent">Decorative Map (No Real GPS)</span>
+              </div>
+              <div class="map-card__body">
+                <img src="assets/images/campus-map-illustration.svg"
+                  alt="Decorative artistic map illustration showing fictional school location at Plot 00 Learning Avenue Demo Nagar Hyderabad"
+                  class="map-img">
+              </div>
+              <div class="map-card__footer">
+                <p><i class="fa-solid fa-compass"></i> Conveniently accessible via Demo Nagar Main Road and Learning
+                  Avenue. Ample parent parking and designated bus drop-off zone.</p>
+                <a href="#admission" class="btn btn--sm btn--primary">
+                  <i class="fa-solid fa-calendar-check"></i> Book Campus Tour
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__container">
+
+      <!-- Column 1: School Identity -->
+      <div class="footer__col footer__col--brand">
+        <div class="brand brand--footer">
+          <img src="assets/logo/school-logo.svg" alt="Primary School Logo" width="48" height="48">
+          <div class="brand__text">
+            <span class="brand__title">Primary School Website</span>
+            <span class="brand__tagline">Nurturing Young Minds • Joyful Learning</span>
+          </div>
+        </div>
+        <p class="footer__bio">
+          A modern fictional primary school dedicated to nurturing holistic growth, playful STEAM exploration, moral
+          character, and joyful scholastic curiosity for young learners.
+        </p>
+        <div class="footer__socials" aria-label="Social media links demo">
+          <button class="social-btn demo-tooltip-btn" aria-label="Facebook demo"
+            data-tooltip="Fictional Demo Social Link"><i class="fa-brands fa-facebook-f"></i></button>
+          <button class="social-btn demo-tooltip-btn" aria-label="Instagram demo"
+            data-tooltip="Fictional Demo Social Link"><i class="fa-brands fa-instagram"></i></button>
+          <button class="social-btn demo-tooltip-btn" aria-label="YouTube demo"
+            data-tooltip="Fictional Demo Social Link"><i class="fa-brands fa-youtube"></i></button>
+          <button class="social-btn demo-tooltip-btn" aria-label="LinkedIn demo"
+            data-tooltip="Fictional Demo Social Link"><i class="fa-brands fa-linkedin-in"></i></button>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Our School</a></li>
+          <li><a href="#why-choose"><i class="fa-solid fa-chevron-right"></i> Why Choose Us</a></li>
+          <li><a href="#facilities"><i class="fa-solid fa-chevron-right"></i> Facilities</a></li>
+          <li><a href="#gallery"><i class="fa-solid fa-chevron-right"></i> Photo Gallery</a></li>
+          <li><a href="#testimonials"><i class="fa-solid fa-chevron-right"></i> Parent Reviews</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Academic Programs -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Academics</h4>
+        <ul class="footer__links">
+          <li><a href="#academics"><i class="fa-solid fa-chevron-right"></i> Pre-Primary (Playgroup)</a></li>
+          <li><a href="#academics"><i class="fa-solid fa-chevron-right"></i> Kindergarten (LKG &amp; UKG)</a></li>
+          <li><a href="#academics"><i class="fa-solid fa-chevron-right"></i> Primary Education (Grades 1–5)</a></li>
+          <li><a href="#academics"><i class="fa-solid fa-chevron-right"></i> STEAM &amp; Activity Labs</a></li>
+          <li><a href="#admission"><i class="fa-solid fa-chevron-right"></i> Admission Guidelines</a></li>
+          <li><a href="#admission"><i class="fa-solid fa-chevron-right"></i> Fee Structure Enquiry</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Information -->
+      <div class="footer__col footer__col--contact">
+        <h4 class="footer__heading">Demo Campus Office</h4>
+        <ul class="footer__contact-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Plot No. 00, Learning Avenue, Demo Nagar, Hyderabad, Telangana – 500000.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 99999 00000</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>hello@primaryschool-demo.example</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon – Sat: 9:00 AM – 4:00 PM</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Strip -->
+    <div class="footer__bottom">
+      <div class="container footer__bottom-container">
+        <p class="copyright">
+          © 2026 Primary School Website. Demonstration Project. All rights reserved.
+        </p>
+        <p class="demo-statement">
+          Created for portfolio and demonstration purposes. No real school affiliation.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP FLOATING BUTTON -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- PROGRAM DETAILS MODAL (Curriculum View) -->
+  <div class="curriculum-modal" id="curriculum-modal" role="dialog" aria-modal="true"
+    aria-labelledby="modal-program-title" hidden>
+    <div class="curriculum-modal__overlay" id="modal-overlay"></div>
+    <div class="curriculum-modal__content">
+      <button class="curriculum-modal__close" id="modal-close" aria-label="Close Curriculum Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="curriculum-modal__header">
+        <div class="curriculum-modal__badge" id="modal-program-badge">Age 2.5 - 3.5 Yrs</div>
+        <h3 class="curriculum-modal__title" id="modal-program-title">Program Title</h3>
+        <p class="curriculum-modal__subtitle" id="modal-program-subtitle">Program Subtitle</p>
+      </div>
+      <div class="curriculum-modal__body" id="modal-program-body">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+      <div class="curriculum-modal__footer">
+        <button class="btn btn--outline btn--sm" id="modal-btn-close">Close Details</button>
+        <a href="#admission" class="btn btn--primary btn--sm" id="modal-btn-enquire">
+          <i class="fa-solid fa-pencil"></i> Apply for this Program
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADMISSION SUCCESS CONFIRMATION MODAL -->
+  <div class="curriculum-modal confirmation-modal" id="success-modal" role="dialog" aria-modal="true"
+    aria-labelledby="success-title" hidden>
+    <div class="curriculum-modal__overlay" id="success-overlay"></div>
+    <div class="curriculum-modal__content text-center">
+      <div class="success-icon">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="curriculum-modal__title" id="success-title">Enquiry Submitted Successfully!</h3>
+      <p class="success-lead" id="success-message">
+        Thank you, <strong id="success-parent-name">Parent</strong>! We have received your demonstration enquiry for
+        <strong id="success-child-name">Child</strong>.
+      </p>
+      <div class="demo-success-card">
+        <p><i class="fa-solid fa-circle-info"></i> <strong>Demonstration Notice:</strong> This is a frontend demo
+          project. No actual data was saved to an external database. If this were a live production system, an automated
+          confirmation email would be delivered to your inbox.</p>
+      </div>
+      <button class="btn btn--primary" id="btn-close-success">
+        Done / Return to Website
+      </button>
+    </div>
+  </div>
+
+  <!-- WHATSAPP DEMO DIALOG -->
+  <div class="curriculum-modal" id="whatsapp-modal" role="dialog" aria-modal="true" aria-labelledby="wa-title" hidden>
+    <div class="curriculum-modal__overlay" id="wa-overlay"></div>
+    <div class="curriculum-modal__content text-center">
+      <div class="whatsapp-dialog-icon">
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <h3 class="curriculum-modal__title" id="wa-title">WhatsApp Support (Demo)</h3>
+      <p class="text-muted mt-2">
+        In a live production deployment, this button links directly to the school's verified WhatsApp Business API chat
+        channel.
+      </p>
+      <div class="demo-success-card text-left mt-3">
+        <p><strong>Configured Fictional Number:</strong> +91 99999 00000</p>
+        <p><strong>Default Message:</strong> <em>"Hello, I would like to know more about Primary School admissions for
+            2026-27."</em></p>
+      </div>
+      <button class="btn btn--primary mt-3" id="btn-close-wa">
+        Close Demo Notice
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

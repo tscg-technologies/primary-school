@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F8FD"/>
+      <stop offset="100%" stop-color="#FFFDF7"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="480" rx="28" fill="url(#aboutGrad)"/>
+
+  <!-- Circular background badge -->
+  <circle cx="340" cy="220" r="180" fill="#EBF2FA" opacity="0.6"/>
+  <circle cx="340" cy="220" r="140" fill="#FFFFFF"/>
+
+  <!-- Central "Tree of Knowledge and Joy" -->
+  <path d="M330 380v-100c-25-30-60-40-90-20 10-40 45-55 80-45-5-30 20-65 60-60 35 5 50 35 40 65 35-5 65 15 65 50-30-10-60 5-75 30v80z" fill="#4CAF50"/>
+  <rect x="330" y="280" width="20" height="100" rx="6" fill="#8D6E63"/>
+
+  <!-- Apples / Knowledge fruits -->
+  <circle cx="280" cy="210" r="12" fill="#FF8066"/>
+  <circle cx="330" cy="180" r="14" fill="#FFC857"/>
+  <circle cx="390" cy="195" r="12" fill="#FF8066"/>
+  <circle cx="420" cy="245" r="10" fill="#FFC857"/>
+  <circle cx="260" cy="260" r="11" fill="#4D96FF"/>
+
+  <!-- Open Books at Base of Tree -->
+  <g transform="translate(260, 360)">
+    <path d="M0 25c25-15 55-15 80 5 25-20 55-20 80-5v-25c-25-15-55-15-80 5-25-20-55-20-80-5v25z" fill="#2457A6"/>
+    <path d="M5 23c23-14 50-14 75 4 23-18 50-18 75-4v-22c-25-14-52-14-75 4-23-18-50-18-75-4v22z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Surrounding Badges / Highlights -->
+  <!-- Top Left: Safety -->
+  <g transform="translate(60, 60)">
+    <rect width="160" height="56" rx="28" fill="#FFFFFF" stroke="#EBF2FA" stroke-width="2"/>
+    <circle cx="30" cy="28" r="18" fill="#5CD85A"/>
+    <path d="M25 28l4 4 8-8" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <text x="60" y="26" fill="#263247" font-size="12" font-family="'Nunito', sans-serif" font-weight="800">100% Safe Campus</text>
+    <text x="60" y="42" fill="#64748B" font-size="10" font-family="'Poppins', sans-serif">Secure &amp; Guarded</text>
+  </g>
+
+  <!-- Top Right: Play-Based -->
+  <g transform="translate(460, 70)">
+    <rect width="160" height="56" rx="28" fill="#FFFFFF" stroke="#EBF2FA" stroke-width="2"/>
+    <circle cx="30" cy="28" r="18" fill="#FFC857"/>
+    <text x="30" y="34" fill="#263247" font-size="16" text-anchor="middle">★</text>
+    <text x="60" y="26" fill="#263247" font-size="12" font-family="'Nunito', sans-serif" font-weight="800">Joyful Learning</text>
+    <text x="60" y="42" fill="#64748B" font-size="10" font-family="'Poppins', sans-serif">Play &amp; Discover</text>
+  </g>
+
+  <!-- Bottom Left: Experienced Educators -->
+  <g transform="translate(50, 370)">
+    <rect width="180" height="56" rx="28" fill="#FFFFFF" stroke="#EBF2FA" stroke-width="2"/>
+    <circle cx="30" cy="28" r="18" fill="#2457A6"/>
+    <text x="30" y="34" fill="#FFFFFF" font-size="14" text-anchor="middle">🎓</text>
+    <text x="60" y="26" fill="#263247" font-size="12" font-family="'Nunito', sans-serif" font-weight="800">Certified Teachers</text>
+    <text x="60" y="42" fill="#64748B" font-size="10" font-family="'Poppins', sans-serif">1:15 Teacher Ratio</text>
+  </g>
+
+  <!-- Bottom Right: Holistic Growth -->
+  <g transform="translate(460, 370)">
+    <rect width="170" height="56" rx="28" fill="#FFFFFF" stroke="#EBF2FA" stroke-width="2"/>
+    <circle cx="30" cy="28" r="18" fill="#FF8066"/>
+    <text x="30" y="34" fill="#FFFFFF" font-size="14" text-anchor="middle">♥</text>
+    <text x="60" y="26" fill="#263247" font-size="12" font-family="'Nunito', sans-serif" font-weight="800">Holistic Care</text>
+    <text x="60" y="42" fill="#64748B" font-size="10" font-family="'Poppins', sans-serif">Mind, Body &amp; Soul</text>
+  </g>
+</svg>

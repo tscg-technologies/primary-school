@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad_steam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDFDF4"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <pattern id="grid_steam" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.5" fill="#2457A6" opacity="0.08"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="640" height="360" rx="16" fill="url(#bgGrad_steam)"/>
+  <rect width="640" height="360" rx="16" fill="url(#grid_steam)"/>
+
+  <!-- Decorative geometric accents -->
+  <circle cx="80" cy="60" r="40" fill="#FFC857" opacity="0.3"/>
+  <circle cx="580" cy="300" r="50" fill="#FF8066" opacity="0.2"/>
+  <circle cx="560" cy="60" r="30" fill="#4D96FF" opacity="0.25"/>
+
+  <!-- Main Illustration Group -->
+  <g transform="translate(0, 15)">
+    
+      <!-- STEAM / Gears, Rocket, Lightbulb -->
+      <!-- Gear -->
+      <circle cx="210" cy="140" r="30" fill="#2457A6"/>
+      <circle cx="210" cy="140" r="14" fill="#FFFFFF"/>
+      <!-- Rocket -->
+      <path d="M330 90c15 15 25 45 25 70h-50c0-25 10-55 25-70z" fill="#FF8066"/>
+      <polygon points="305,140 285,165 305,160" fill="#FFC857"/>
+      <polygon points="355,140 375,165 355,160" fill="#FFC857"/>
+      <circle cx="330" cy="125" r="10" fill="#FFFFFF"/>
+      <polygon points="320,160 330,185 340,160" fill="#FFC857"/>
+      <!-- Lightbulb -->
+      <circle cx="430" cy="120" r="24" fill="#FFC857" stroke="#263247" stroke-width="3"/>
+      <rect x="422" y="142" width="16" height="12" rx="2" fill="#263247"/>
+      <line x1="430" y1="85" x2="430" y2="75" stroke="#FFC857" stroke-width="4" stroke-linecap="round"/>
+      <line x1="400" y1="95" x2="390" y2="85" stroke="#FFC857" stroke-width="4" stroke-linecap="round"/>
+      <line x1="460" y1="95" x2="470" y2="85" stroke="#FFC857" stroke-width="4" stroke-linecap="round"/>
+    
+  </g>
+
+  <!-- Title & Subtitle Banner at bottom -->
+  <rect x="24" y="275" width="592" height="65" rx="12" fill="#263247" opacity="0.94"/>
+  <text x="44" y="305" fill="#FFFFFF" font-size="19" font-family="'Nunito', sans-serif" font-weight="800" letter-spacing="0.5">Activity & STEAM Learning</text>
+  <text x="44" y="325" fill="#FFC857" font-size="13" font-family="'Poppins', sans-serif" font-weight="500">All Grades • Hands-On Robotics & Discovery</text>
+
+  <!-- Demo Badge -->
+  <g transform="translate(500, 287)">
+    <rect width="100" height="24" rx="12" fill="#FF8066"/>
+    <text x="50" y="16" fill="#FFFFFF" font-size="10" font-family="'Poppins', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="0.8">ACADEMIC DEMO</text>
+  </g>
+</svg>

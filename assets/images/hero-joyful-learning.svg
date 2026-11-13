@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8F1FC"/>
+      <stop offset="100%" stop-color="#FFFDF7"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE885"/>
+      <stop offset="100%" stop-color="#FFC857"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#263247" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="760" height="520" rx="32" fill="url(#heroSky)"/>
+
+  <!-- Sun -->
+  <circle cx="640" cy="100" r="55" fill="url(#sunGlow)"/>
+  <circle cx="640" cy="100" r="75" fill="none" stroke="#FFC857" stroke-width="2" stroke-dasharray="8 8" opacity="0.6"/>
+
+  <!-- Gentle Clouds -->
+  <path d="M120 100c0-15 15-25 30-20 8-15 30-15 40 0 15-5 30 5 30 20z" fill="#FFFFFF" opacity="0.9"/>
+  <path d="M440 80c0-12 12-20 25-16 6-12 24-12 32 0 12-4 24 4 24 16z" fill="#FFFFFF" opacity="0.85"/>
+
+  <!-- School Campus / Modern Building Backdrop -->
+  <rect x="220" y="160" width="320" height="240" rx="20" fill="#FFFFFF" filter="url(#softShadow)"/>
+  <!-- School Roof / Triangular Arch -->
+  <polygon points="200,165 380,85 560,165" fill="#2457A6"/>
+  <!-- School Clock -->
+  <circle cx="380" cy="130" r="20" fill="#FFC857"/>
+  <line x1="380" y1="130" x2="380" y2="118" stroke="#263247" stroke-width="3" stroke-linecap="round"/>
+  <line x1="380" y1="130" x2="390" y2="130" stroke="#263247" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- School Windows Grid -->
+  <rect x="250" y="195" width="55" height="50" rx="8" fill="#EBF2FA" stroke="#2457A6" stroke-width="2"/>
+  <rect x="325" y="195" width="55" height="50" rx="8" fill="#EBF2FA" stroke="#2457A6" stroke-width="2"/>
+  <rect x="400" y="195" width="55" height="50" rx="8" fill="#EBF2FA" stroke="#2457A6" stroke-width="2"/>
+  <rect x="475" y="195" width="45" height="50" rx="8" fill="#EBF2FA" stroke="#2457A6" stroke-width="2"/>
+
+  <!-- Entrance Door -->
+  <path d="M350 400v-90c0-16 14-30 30-30s30 14 30 30v90z" fill="#FF8066"/>
+  <circle cx="395" cy="340" r="4" fill="#FFFFFF"/>
+
+  <!-- Lush Green Lawn Hills -->
+  <path d="M-20 440c160-50 320-20 480-40 120-15 220 10 320 40v100h-800z" fill="#78C850"/>
+  <path d="M-20 470c180-30 360-10 540-30 140-15 200 10 260 30v70h-800z" fill="#58B038"/>
+
+  <!-- Friendly Trees -->
+  <!-- Left Tree -->
+  <rect x="110" y="340" width="16" height="80" rx="4" fill="#8D5B4C"/>
+  <circle cx="118" cy="300" r="50" fill="#489F38"/>
+  <circle cx="95" cy="280" r="35" fill="#5BB845"/>
+  <circle cx="140" cy="285" r="35" fill="#69C952"/>
+
+  <!-- Right Tree -->
+  <rect x="630" y="350" width="16" height="70" rx="4" fill="#8D5B4C"/>
+  <circle cx="638" cy="315" r="45" fill="#489F38"/>
+  <circle cx="660" cy="300" r="32" fill="#5BB845"/>
+  <circle cx="615" cy="305" r="32" fill="#69C952"/>
+
+  <!-- Joyful Children Elements (Modern Stylized Vectors) -->
+  <!-- Child 1 with Backpack (Left) -->
+  <circle cx="190" cy="360" r="18" fill="#FFDBB5"/>
+  <path d="M172 355c0-12 18-20 36-12" stroke="#263247" stroke-width="6" stroke-linecap="round"/>
+  <rect x="175" y="380" width="30" height="45" rx="10" fill="#FF8066"/>
+  <rect x="165" y="385" width="12" height="25" rx="5" fill="#2457A6"/>
+  <path d="M180 425v25M200 425v25" stroke="#263247" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Child 2 with Book (Center-Right) -->
+  <circle cx="560" cy="370" r="18" fill="#FFD1A4"/>
+  <path d="M542 368c0-12 18-20 36-12" stroke="#4A2E18" stroke-width="6" stroke-linecap="round"/>
+  <rect x="545" y="390" width="30" height="42" rx="10" fill="#2457A6"/>
+  <!-- Open Book held in hands -->
+  <polygon points="545,410 575,410 585,425 535,425" fill="#FFC857"/>
+  <path d="M552 432v20M568 432v20" stroke="#263247" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Flying Paper Airplane with Trailing Dash Line -->
+  <path d="M80 230q180-80 340-20t260-80" fill="none" stroke="#2457A6" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <g transform="translate(680, 130) rotate(-15)">
+    <polygon points="0,0 28,10 0,20 6,10" fill="#FF8066"/>
+    <polygon points="0,10 28,10 6,10" fill="#E65100"/>
+  </g>
+
+  <!-- Colorful Floating Educational Icons -->
+  <!-- Pencil -->
+  <g transform="translate(80, 150) rotate(-25)">
+    <rect x="0" y="0" width="40" height="12" rx="3" fill="#FFC857"/>
+    <polygon points="40,0 52,6 40,12" fill="#E09F3E"/>
+    <polygon points="48,4 52,6 48,8" fill="#263247"/>
+  </g>
+  <!-- ABC Block -->
+  <g transform="translate(620, 200) rotate(15)">
+    <rect width="36" height="36" rx="8" fill="#FFC857" stroke="#263247" stroke-width="2"/>
+    <text x="18" y="26" fill="#263247" font-size="20" font-family="'Nunito', sans-serif" font-weight="900" text-anchor="middle">A</text>
+  </g>
+</svg>
